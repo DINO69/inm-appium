@@ -20,10 +20,10 @@ Iremos apresentar a interação com vários elementos e também faremos fluxos c
 
 O padrão 'Page Factory' é utilizado por classes que representam páginas da aplicação no projeto para : <br/>
 1 - Instanciar os elementos da página na criação do objeto;</br>
-1 - Deixar o código menos verboso;<br/>
-2 - Facilitar a leitura / manutenção;<br/>
-3 - Facilitar o uso OO (Orientação a Objeto);<br/>
-4 - Proporcionar a aplicação de outros princípios de desenvolvimento (SOLID);<br/><br/>
+2 - Deixar o código menos verboso;<br/>
+3 - Facilitar a leitura / manutenção;<br/>
+4 - Facilitar o uso OO (Orientação a Objeto);<br/>
+5 - Proporcionar a aplicação de outros princípios de desenvolvimento (SOLID);<br/><br/>
 
 Para utilizar o Page Factory :
 
