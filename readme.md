@@ -35,7 +35,15 @@ public AppPage() {
 }
 ```
 
-Criamos a class [AppPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/AppPage.java) que conterá a instrução a cima e comportamentos comuns para todas as páginas, conforme classe [MenuPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/MenuPage.java) :  
+Criamos a class [AppPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/AppPage.java) que conterá a instrução a cima e comportamentos comuns para todas as páginas, conforme herança da classe [MenuPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/MenuPage.java) :  
+
+1.1 - Herdar a classe AppPage :
+
+```
+public class MenuPage extends AppPage {
+    ...
+}
+```
 
 2 - Para cada elemento da página, incluímos a anotação abaixo:
 
