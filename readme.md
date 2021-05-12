@@ -1,6 +1,6 @@
 ## Objetivo
 
-Este projeto tem como objetivo servir de exemplo para a realização testes em aplicativos mobile utilizando [Appium]().<br/>
+Este projeto tem como objetivo servir de exemplo para a realização testes em aplicativos mobile utilizando [Appium](https://appium.io/).<br/>
 
 Iremos apresentar a interação com vários elementos e também faremos fluxos completos, iremos apresentar várias situações comuns no dia-a-dia do tester mobile.
 
