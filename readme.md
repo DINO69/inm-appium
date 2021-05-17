@@ -93,7 +93,7 @@ Acredito ser um dos elementos mais importantes quando falamos de teste UI tanto 
 
 Este elemento é usado para armazenar texto, para demonstrar o uso dele, escreveremos um texto qualquer, e depois capturaremos ele, validando o processo de escrita / captura do conteúdo.</br>
 
-##### Teste no app [CTAppium_1_2.apk]() na classe [EditTextTest]()
+##### Teste no app [CTAppium_1_2.apk](https://github.com/DINO69/inm-appium/blob/main/apks/CTAppium_1_2.apk) na classe [EditTextTest](https://github.com/DINO69/inm-appium/blob/main/src/test/java/br/com/inmetrics/appium/EditTextTest.java)
 
 ##### Nativo
 
