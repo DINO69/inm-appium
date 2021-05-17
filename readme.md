@@ -34,7 +34,7 @@ O padrão 'Page Factory' é utilizado por classes que representam páginas da ap
 
 Para utilizar o Page Factory :
 
-1 - O construtor da class deve ter a seguinte instrução: 
+1 - O construtor da classe deve ter a seguinte instrução: 
 
 ```
 public AppPage() {
@@ -42,12 +42,12 @@ public AppPage() {
 }
 ```
 
-Criamos a class [AppPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/AppPage.java) que conterá a instrução a cima e comportamentos comuns para todas as páginas, conforme herança da classe [MenuPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/MenuPage.java) :  
+Criamos a classe [AppPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/AppPage.java) que conterá a instrução a cima e comportamentos comuns para todas as páginas, conforme herança da classe [MenuPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/MenuPage.java) :  
 
 1.1 - Herdar a classe AppPage :
 
 ```
-public class MenuPage extends AppPage {
+public classe MenuPage extends AppPage {
     ...
 }
 ```
@@ -103,14 +103,14 @@ Para interagir com o EditText nativo : </br>
 
 1 - Mapear/Encontrar o elemento utilizando [PageFactory](#pagefactory) :
 
-1.1 - Exemplo na class ['FormularioPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/FormularioPage.java)
+1.1 - Exemplo na classe ['FormularioPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/FormularioPage.java)
 
 ```
 @AndroidFindBy(accessibility = "nome")
 private MobileElement nome;
 ```
 
-1.2 - Exemplo na class ['SeuBarrigaNativoPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/seubarriganativo/SeuBarrigaNativoPage.java)
+1.2 - Exemplo na classe ['SeuBarrigaNativoPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/seubarriganativo/SeuBarrigaNativoPage.java)
 
 ```
 @AndroidFindBy(xpath = "//android.widget.EditText[@index=1]")
@@ -138,7 +138,7 @@ public void escrever(MobileElement element, String texto) {
 
 2.2 - Dentro de cada página o método escrever é chamado
 
-2.2.1 - Exemplo na class ['FormularioPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/FormularioPage.java)
+2.2.1 - Exemplo na classe ['FormularioPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/FormularioPage.java)
 
 ```
 public void setNome(String nome){
@@ -146,7 +146,7 @@ public void setNome(String nome){
 }
 ```
 
-2.2.2 - Exemplo na class ['SeuBarrigaNativoPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/seubarriganativo/SeuBarrigaNativoPage.java)
+2.2.2 - Exemplo na classe ['SeuBarrigaNativoPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/seubarriganativo/SeuBarrigaNativoPage.java)
 ```
 public void logar(String nome, String senha){
     escrever(this.nome,nome);
@@ -156,7 +156,7 @@ public void logar(String nome, String senha){
 
 3 - Capturando o valor do elemento, utilizamos o metodo ".getText()" do próprio elemento mapeado da classe "page".
 
-3.1 - Exemplo na class ['FormularioPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/FormularioPage.java)
+3.1 - Exemplo na classe ['FormularioPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/FormularioPage.java)
 
 ```
 public String getNome(){
@@ -164,7 +164,7 @@ public String getNome(){
 }
 ```
 
-3.2 - Exemplo na class ['SeuBarrigaNativoPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/seubarriganativo/SeuBarrigaNativoPage.java)
+3.2 - Exemplo na classe ['SeuBarrigaNativoPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/seubarriganativo/SeuBarrigaNativoPage.java)
 ```
 public String getNome(){
     return nome.getText();
@@ -185,7 +185,7 @@ Faremos as mesmas etapas do nativo, apresentando a diferença entre os 2.
 
 1 - Mapear/Encontrar o elemento utilizando [PageFactory](#pagefactory), com a diferença que no construtor da classe, temos que trocar o contexo, tendo em vista que o elemento não está na "camada principal do app"</br> 
 
-1.1 - Exemplo na class ['SeuBarrigaHibridoPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/seubarrigahibrido/SeuBarrigaHibridoPage.java)
+1.1 - Exemplo na classe ['SeuBarrigaHibridoPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/seubarrigahibrido/SeuBarrigaHibridoPage.java)
 ```
 @AndroidFindBy(id = "email")
 private MobileElement email;
@@ -206,7 +206,7 @@ public SeuBarrigaHibridoPage() {
 
 2 - Preencher/Escrever conteúdo dentro do EditText, idêntico ao nativo e também extende [AppPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/AppPage.java) :
 
-2.1 - Exemplo na class ['SeuBarrigaHibridoPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/seubarrigahibrido/SeuBarrigaHibridoPage.java)
+2.1 - Exemplo na classe ['SeuBarrigaHibridoPage'](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/seubarrigahibrido/SeuBarrigaHibridoPage.java)
 ```
 public void logar(String email, String senha){
     escrever(this.email,email);
