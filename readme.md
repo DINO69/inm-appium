@@ -324,4 +324,6 @@ Biblioteca [owner](http://owner.aeonbits.org/) utilizada para instanciar as prop
 
 ### [Utilizando o Appium + Java - #1 - Apresentação do projeto](https://youtu.be/zJffyiC91Vo)
 ### [Utilizando o Appium + Java - #2 - Page Factory](https://youtu.be/VRpjchAKgX4)
+### [Utilizando o Appium + Java - #3 - Elemento EditText 1/2](https://youtu.be/eugJH_ZcZgY)
+### [Utilizando o Appium + Java - #4 - Elemento EditText 2/2](https://youtu.be/3QG8LDEaZm0)
 
