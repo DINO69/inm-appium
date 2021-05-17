@@ -1,6 +1,6 @@
 ## Objetivo
 
-Este projeto tem como objetivo servir de exemplo para a realização testes em aplicativos mobile utilizando [Appium]().<br/>
+Este projeto tem como objetivo servir de exemplo para a realização testes em aplicativos mobile na linguagem [JAVA](https://www.oracle.com/br/java/technologies/javase-downloads.html) utilizando [Appium](https://appium.io/).<br/>
 
 Iremos apresentar a interação com vários elementos e também faremos fluxos completos, iremos apresentar várias situações comuns no dia-a-dia do tester mobile.
 
@@ -27,10 +27,10 @@ emulator -avd <AVDname>
 
 O padrão 'Page Factory' é utilizado por classes que representam páginas da aplicação no projeto para : <br/>
 1 - Instanciar os elementos da página na criação do objeto;</br>
-1 - Deixar o código menos verboso;<br/>
-2 - Facilitar a leitura / manutenção;<br/>
-3 - Facilitar o uso OO (Orientação a Objeto);<br/>
-4 - Proporcionar a aplicação de outros princípios de desenvolvimento (SOLID);<br/><br/>
+2 - Deixar o código menos verboso;<br/>
+3 - Facilitar a leitura / manutenção;<br/>
+4 - Facilitar o uso OO (Orientação a Objeto);<br/>
+5 - Proporcionar a aplicação de outros princípios de desenvolvimento (SOLID);<br/><br/>
 
 Para utilizar o Page Factory :
 
@@ -42,7 +42,15 @@ public AppPage() {
 }
 ```
 
-Criamos a class [AppPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/AppPage.java) que conterá a instrução a cima e comportamentos comuns para todas as páginas, conforme classe [MenuPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/MenuPage.java) :  
+Criamos a class [AppPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/AppPage.java) que conterá a instrução a cima e comportamentos comuns para todas as páginas, conforme herança da classe [MenuPage](https://github.com/DINO69/inm-appium/blob/main/src/main/java/br/com/inmetrics/pages/ctappium/MenuPage.java) :  
+
+1.1 - Herdar a classe AppPage :
+
+```
+public class MenuPage extends AppPage {
+    ...
+}
+```
 
 2 - Para cada elemento da página, incluímos a anotação abaixo:
 
@@ -313,4 +321,7 @@ Biblioteca [owner](http://owner.aeonbits.org/) utilizada para instanciar as prop
 ```
 
 ## Vídeos
+
+### [Utilizando o Appium + Java - #1 - Apresentação do projeto](https://youtu.be/zJffyiC91Vo)
+### [Utilizando o Appium + Java - #2 - Page Factory](https://youtu.be/VRpjchAKgX4)
 
