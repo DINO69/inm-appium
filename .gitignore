@@ -2,3 +2,5 @@
 *.iml
 *.class
 /target
+page.xml
+page.uix.xml
